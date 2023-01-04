@@ -5,22 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,800;1,800&display=swap" rel="stylesheet">
-
     <title>About Me: Mar</title>
 </head>
+
 <body>
+
     <div class="if">
-        <!-- INTRO -->
-        <div class="section section-intro bg--color-lightpurple">
-          <section class="presentation">
-            Hi, I'm <h1>Mar Alarcón</h1> <h2>UX/UI, Graphic & Web
-            Designer</h2>
-            </section>
-            </div>
+      <!-- TOPBAR -->
+      <div>
+        =D
+      </div>
+      <nav class="nav nav--hide" id="js-showAndHide">
+        <a href="">ABOUT</a>
+        <a href="">SKILLS</a>
+        <a href="">CONTACT</a>
+      </nav>
+      <div class="toggle">
+        BOTON
+      </div>
+
+        <!-- HEADER -->
+        <header class="header center-content">
+          <h1>Mar Alarcón</h1>
+          <h2>UX/UI, Graphic & Web Designer</h2>
+        </header>
+
         <!-- HOME -->
-        <div class="section section-home">
+        <div class="home-section center-content">
             <div class="portrait"><img src="" alt="a portrait picture of my face"></div>
             <div class="button-container">
                 <button class="btn primary-btn">ABOUT ME</button>
@@ -30,38 +43,43 @@
             Currently based in Valencia, but willing to work anywhere or remote. :^)
             I enjoy photography, listening to music, playing videogames, reading and, obviously, I love cats! Also, I’m skilled as an illustrator & graphic designer.</p>
         </div>
+
         <!-- ABOUT ME -->
-        <div class="section section-about bg--color-darkgray"><section class="aboutMe-p-section">
-        <section class="education-section">
-         <details>
-          <summary class="section-title">EDUCATION</summary>
-            <p class="section-p-title">2022</p>
-            <p class="section-p">Currently I’m coursing a master's degree on web design, UI/UX, marketing and front-end development at ESAT.</p>
-            <p class="section-p-title">2016-2020</p>
-            <p class="section-p">Bachelor’s Degree in Fine Arts, specialty of Visual Art and Design at Universidad Miguel Hernández de Elche.</p>
-        </details>
-        <details>
-          <summary class="section-title">SKILLS</summary>
-            <p class="section-p-title">Soft Skills</p>
-            <p class="section-p">Continuously learning, collaboration & teamwork, critical thinking, problem solving and creative..</p>
-            <p class="section-p-title">Softwares</p>
-            <p class="section-p">Adobe Creative Suite, Figma, Visual Studio Code, Github.</p>
-            <p class="section-p-title">Programming Languagues</p>
-            <p class="section-p">HTML, CSS, JavaScript.</p>
-         </details>
-         <details>
-          <summary class="section-title">AWARDS & RECOGNITION</summary>
-            <p class="section-p-title">2018</p>
-            <p class="section-p">Photography exhibition at International Photography Festival “Photoalicante” (San Juan, Alicante)</p>
-            <p class="section-p-title">2017</p>
-            <p class="section-p">Photography exhibition at Sala LAC (Altea, Alicante).</p>
-            <p class="section-p-title">2016</p>
-            <p class="section-p">3rd prize II Setmana d’Art a Callosa d’en Sarrià (Alicante)</p>
-         </details>
+        <div class="aboutMe-section center-content">
+        <section class="aboutMe-p-section">
+          <section class="education-section">
+          <details>
+            <summary class="section-title">EDUCATION</summary>
+              <p class="section-p-title">2022</p>
+              <p class="section-p">Currently I’m coursing a master's degree on web design, UI/UX, marketing and front-end development at ESAT.</p>
+              <p class="section-p-title">2016-2020</p>
+              <p class="section-p">Bachelor’s Degree in Fine Arts, specialty of Visual Art and Design at Universidad Miguel Hernández de Elche.</p>
+          </details>
+          <details>
+            <summary class="section-title">SKILLS</summary>
+              <p class="section-p-title">Soft Skills</p>
+              <p class="section-p">Continuously learning, collaboration & teamwork, critical thinking, problem solving and creative..</p>
+              <p class="section-p-title">Softwares</p>
+              <p class="section-p">Adobe Creative Suite, Figma, Visual Studio Code, Github.</p>
+              <p class="section-p-title">Programming Languagues</p>
+              <p class="section-p">HTML, CSS, JavaScript.</p>
+          </details>
+          <details>
+            <summary class="section-title">AWARDS & RECOGNITION</summary>
+              <p class="section-p-title">2018</p>
+              <p class="section-p">Photography exhibition at International Photography Festival “Photoalicante” (San Juan, Alicante)</p>
+              <p class="section-p-title">2017</p>
+              <p class="section-p">Photography exhibition at Sala LAC (Altea, Alicante).</p>
+              <p class="section-p-title">2016</p>
+              <p class="section-p">3rd prize II Setmana d’Art a Callosa d’en Sarrià (Alicante)</p>
+          </details>
         </section>
-      </section></div>
+      </section>
+    </div>
+    
       <!-- CONTACT FORM -->
-        <div class="section section-contact">
+        <div class="contact-section">
+          <!-- INPUTS -->
           <form>
             <label for="name">Name</label>   
             <input name="name" type="text" class="contact-form" placeholder="How should I call you" />
@@ -70,12 +88,12 @@
             <input name="email" type="text" class="contact-form" placeholder="So I can contact you" />
 
             <label for="text">Message</label> 
-            <textarea name="text" class="contact-form" placeholder="Do you need help with a project? Ask for a budget? Maybe more information about me or my work?
-            Tell me how can I help!"></textarea>
+            <textarea name="text" class="contact-form" placeholder="Do you need help with a project? Ask for a budget? Maybe more information about me or my work? Tell me how can I help!"></textarea>
 
             <input type="submit" value="SEND"/>
           </form>
-          <div class="section-findme">
+
+          <div class="findMe-section center-content">
             <p class="links-p">You can also find me on:</p>
             <a href="https://github.com/mrlrcn">
               <img border="0" alt="Github" src="logo_w3s.gif" width="100" height="100">
