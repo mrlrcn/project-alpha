@@ -1,3 +1,145 @@
-/*TIPOGRAFIAS
+/* Fonts
 font-family: 'Roboto Mono', monospace;
-font-family: 'Rubik', sans-serif;*/
+font-family: 'Rubik', sans-serif; */
+body {
+    margin: 0;
+}
+
+.topbar {
+    display: flex;
+    padding: 8px 12px;  
+  }
+  .nav {
+    flex: 1;
+    background-color: red;
+    text-align: center;
+  }
+  .nav--hide {
+    transform: translateX(-150%);
+  }
+
+.header {
+    height: 100vh;
+    background-color: #e3d5fd;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
+  }
+  
+@media all and (min-width: 800px) {
+    .center-content {
+      padding-left: calc((100% - 800px) / 2);
+      padding-right: calc((100% - 800px) / 2);
+    }
+  }
+
+.home-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: white;
+  }
+
+  /*ABOUT ME*/
+  /*Style*/
+.aboutMe-section {
+    background-color: #413C4A;
+    color: white;
+    padding: 30px;
+  }
+.section-title {
+    width: 100%;
+    padding: 0.5rem 0;
+    border-top: 1px solid white;
+
+    font-family: Rubik, sans-serif;
+    font-size: 30px;
+  }
+
+.section-p-title {
+    font-family: Rubik, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.section-p{
+    font-family: Roboto Mono, monospace;
+}
+summary {
+    display: block;
+    color: white;
+  }
+
+/*Summary arrow*/
+summary::after {
+    margin-left: 1ch;
+    display: inline-block;
+    transition: 0.2s;
+    content: "▶"
+  }
+
+details[open] summary::after {
+    transform: rotate(90deg);
+  }
+
+/*CONTACT*/
+.contact-section {
+    background-color: white;
+  }
+
+form {
+    max-width:420px;
+    margin:50px auto;
+    }
+
+.contact-form {
+        color: black;
+        font-family: Roboto Mono, monospace;
+        font-size: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 0px black;
+        line-height: 22px;
+        background-color: transparent;
+        border:1px solid black;
+        transition: all 0.3s;
+        padding: 13px;
+        margin-bottom: 15px;
+        width:100%;
+        box-sizing: border-box;
+        outline:0;
+      }
+
+label {
+        font-family: Roboto Mono, monospace;
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+textarea {
+        height: 150px;
+        line-height: 150%;
+        resize: vertical;
+      }
+      
+[type="submit"] {
+    font-family: Roboto Mono, monospace;
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    background: #E2D5FC;
+    border-radius:10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 0px black;
+    cursor: pointer;
+    color: black;        
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+}
+
+[type="submit"]:hover { background:#B4A1DB;}
+
+.links-p {
+    font-family: Roboto Mono, monospace;
+    font-size: 15px;
+}
