@@ -3,7 +3,6 @@ font-family: 'Roboto Mono', monospace;
 font-family: 'Rubik', sans-serif; */
 * {
     box-sizing: border-box;
-    letter-spacing: 0.01rem;
     scroll-behavior: smooth;
 }
 
@@ -12,6 +11,7 @@ body {
     border: 0;
     padding: 0;
     font-size: 100%;
+    font-family: 'Roboto Mono', monospace;
     font-weight: inherit;
     display: flex;
     justify-content: center;
@@ -44,13 +44,33 @@ body {
   }
 
 .header {
+    width: 100%;
     height: 100vh;
     background-color: #e3d5fd;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    text-align: left;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 16px; 
   }
+
+    .arrow-txt {
+  
+    /*ANIMATION*/
+      animation: rotation 10s infinite linear;
+    }
+      @keyframes rotation {
+        from {
+        transform: rotate(0deg);
+        }
+      
+        to {
+        transform: rotate(365deg);
+        }
+      }
+      
   
 @media all and (min-width: 800px) {
     .center-content {
@@ -64,16 +84,35 @@ body {
     align-items: center;
 }
 
-  /* HOME */
-.home-section {
+  /* ABOUT ME */
+.aboutMe-section {
     padding-top: 80px;
     padding-bottom: 80px;
     background-color: white;
   }
+  /*Portrait photo*/
+  .portrait-container {
+    flex-basis: 90%;
+    max-width: 400px;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    box-shadow: 4px 4px 0px #000;
+  }
+    .portrait {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      object-fit: contain;
+  }
 
-  /*ABOUT ME*/
+  /* SKILLS */
   /*Style*/
-.aboutMe-section {
+.skills-section {
     background-color: #413C4A;
     color: white;
     padding: 30px;
@@ -93,7 +132,6 @@ body {
     font-weight: 400;
 }
 .section-p{
-    font-family: Roboto Mono, monospace;
     font-weight: 200;
 }
 summary {
@@ -128,7 +166,6 @@ form {
 
 .contact-form {
         color: black;
-        font-family: Roboto Mono, monospace;
         font-size: 15px;
         border-radius: 10px;
         box-shadow: 2px 2px 0px black;
@@ -144,7 +181,6 @@ form {
       }
 
 label {
-        font-family: Roboto Mono, monospace;
         font-size: 15px;
         font-weight: 700;
       }
@@ -156,7 +192,6 @@ textarea {
       }
       
 [type="submit"] {
-    font-family: Roboto Mono, monospace;
     font-weight: 700;
     font-size: 20px;
     width: 100%;
@@ -175,6 +210,5 @@ textarea {
 [type="submit"]:hover { background:#B4A1DB;}
 
 .links-p {
-    font-family: Roboto Mono, monospace;
     font-size: 15px;
 }
