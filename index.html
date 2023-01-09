@@ -14,17 +14,19 @@
 
     <div class="if">
       <!-- TOPBAR -->
-      <div>
-        =D
+      <div class="topbar">
+        <div>=D</div>
+      <div class="navbar" id="js-showHide">
+        <nav>
+          <a href="">ABOUT</a>
+          ·
+          <a href="">SKILLS</a>
+          ·
+          <a href="">CONTACT</a>
+        </nav>
       </div>
-      <nav class="nav nav--hide" id="js-showAndHide">
-        <a href="">ABOUT</a>
-        <a href="">SKILLS</a>
-        <a href="">CONTACT</a>
-      </nav>
-      <div class="toggle">
-        BOTON
-      </div>
+      <button onclick="toggle()">toggle</button>
+    </div>
 
         <!-- HEADER -->
         <header class="header">
@@ -37,21 +39,21 @@
           </div>
         </header>
 
-        <!-- HOME (ABOUT ME) cambiar nombres!!!-->
+        <!-- ABOUT ME-->
         <div class="aboutMe-section center-content">
             <div class="portrait-container">
               <img class="portrait" src="imgs/face-img.svg" alt="a portrait picture of my face">
             </div>
               <div class="button-container">
-                <button class="btn primary-btn">ABOUT ME</button>
-                <button class="btn secondary-btn">CONTACT ME</button>
+                <button class="btn">ABOUT ME</button>
+                <button class="btn btn--secondary">CONTACT ME</button>
             </div>
             <p>I’m a multidisciplinary digital designer focused in making <span class="bold">simple, clear</span> and <span class="bold">useful</span> websites that’ll work for you.
             Currently based in Valencia, but willing to work anywhere or remote. :^)
             I enjoy photography, listening to music, playing videogames, reading and, obviously, I love cats! Also, I’m skilled as an illustrator & graphic designer.</p>
         </div>
 
-        <!-- ABOUT ME (SKILLS) -->
+        <!-- SKILLS -->
         <div class="skills-section center-content">
         <section class="skills-p-section">
           <section class="education-section">
@@ -112,5 +114,7 @@
           </div>
         </div>
     </div>
+  <!--Link to JS File-->
+  <script src="scripts.js"></script>
 </body>
 </html>

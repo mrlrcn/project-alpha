@@ -21,26 +21,28 @@ body {
 
 .if {
     width: 85%;
+    max-width: 1000px;
+    min-width: 289px;
     height: 95%;
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    background-color: white;
     border: 1px solid #413C4A;
 }
 
 .topbar {
     display: flex;
-    padding: 8px 12px;  
+    padding: 8px 12px;
+    justify-content: space-between;
+    background-color: #B4A1DB; 
   }
-  .nav {
-    flex: 1;
-    background-color: red;
-    text-align: center;
-  }
-  .nav--hide {
-    transform: translateX(-1000%);
+    .navbar {
+      flex: 1;
+      background-color: red;
+      text-align: center;
   }
 
 .header {
@@ -88,7 +90,6 @@ body {
 .aboutMe-section {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-color: white;
   }
   /*Portrait photo*/
   .portrait-container {
@@ -110,51 +111,94 @@ body {
       object-fit: contain;
   }
 
-  /* SKILLS */
+  /* BUTTONS */
+  /*Main Button*/
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 10px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  
+  background-color: #E2D5FC;
+  color: black;
+  border: 1px solid #413C4A;
+  border-radius: 10px;
+  box-shadow: 2px 2px 0px black;
+  
+  font-weight: 600;
+  font-size: 18px;
+}
+
+  .btn:hover {
+    color: #B4A1DB;
+    background-color: white;
+   border: 1px solid #B4A1DB;
+  }
+
+  .btn:active {
+    transform: translate(2px, 2px);
+  }
+
+/*Secondary button*/
+.btn--secondary{
+  background-color: #E9E5EA;
+}
+
+  .btn--secondary:hover {
+    color: #413C4A;
+    background-color: #fff;
+    border: 1px solid #413C4A;
+  }
+
+  .btn--secondary:active {
+    transform: translate(0px);
+  }
+/* SKILLS */
   /*Style*/
 .skills-section {
     background-color: #413C4A;
     color: white;
     padding: 30px;
-  }
-.section-title {
-    width: 100%;
-    padding: 0.5rem 0;
-    border-top: 1px solid white;
-
-    font-family: Rubik, sans-serif;
-    font-size: 30px;
-  }
-
-.section-p-title {
-    font-family: Rubik, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
 }
-.section-p{
-    font-weight: 200;
-}
-summary {
-    display: block;
-    color: white;
+  .section-title {
+      width: 100%;
+      padding: 0.5rem 0;
+      border-top: 1px solid white;
+
+      font-family: Rubik, sans-serif;
+      font-size: 30px;
+  }
+
+  .section-p-title {
+      font-family: Rubik, sans-serif;
+      font-size: 20px;
+     font-weight: 400;
+  }
+  .section-p{
+      font-weight: 200;
+  }
+  summary {
+      display: block;
+      color: white;
   }
 
 /*Summary arrow*/
-summary::after {
-    margin-left: 1ch;
-    display: inline-block;
-    transition: 0.2s;
-    content: "▶"
-  }
+    summary::after {
+      margin-left: 1ch;
+      display: inline-block;
+      transition: 0.2s;
+      content: "▶"
+    }
 
-details[open] summary::after {
-    transform: rotate(90deg);
-  }
+    details[open] summary::after {
+      transform: rotate(90deg);
+    }
 
 /*CONTACT*/
 .contact-section {
     width: 100%;
-    background-color: white;
   }
 .contact-section p {
     text-align: center;
