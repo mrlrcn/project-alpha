@@ -34,10 +34,12 @@ body {
 }
 
 .topbar {
+  width: 100%;
+  height: 100%;
     display: flex;
     padding: 8px 12px;
     justify-content: space-between;
-    background-color: #B4A1DB; 
+    background-color: lightblue; 
   }
     .navbar {
       flex: 1;
@@ -202,6 +204,8 @@ body {
   }
 .contact-section p {
     text-align: center;
+    align-items: center;
+    align-content: center;
 }
 form {
     max-width:420px;
@@ -253,6 +257,8 @@ textarea {
 
 [type="submit"]:hover { background:#B4A1DB;}
 
-.links-p {
-    font-size: 15px;
+.rrss-icons {
+  display: flex;
+  width: fit-content;
+  gap: 40px;
 }
