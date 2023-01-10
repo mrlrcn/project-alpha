@@ -107,6 +107,7 @@ body {
     height: 30px;
     content: url(imgs/menuCerrado-img.svg);
   }
+  
 
 .header {
     width: 100%;
@@ -120,7 +121,7 @@ body {
     flex-direction: column;
     padding: 16px; 
   }
-  
+
 .arrow-container{
   box-sizing: border-box;
   display: flex;

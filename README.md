@@ -25,3 +25,4 @@
  (op) ABOUT ME TITLE
  HOME más bonica
  NAVBAR terminar (BOTON? como colocarlo, animarlo q funcione)
+ linea blanca al final de skills?
