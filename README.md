@@ -3,11 +3,8 @@
 
  TO-DO:
 
- 1.- Fix top navbar background // DONE
- add icons to bottom links AND center them!!! //DONE
-  1.1.2.-add Contact form TITLE //DONE
 
-    1.5.-center and space about me objects //ONNIT
+
 
  2.-FINISH home screen (ask 4help¿?)
     2.5 ask imgs position OR make a gif and upload just 1 img
@@ -22,3 +19,9 @@
 
  ----------------
  !! FIX borders of IF in mobile !!!!
+
+ TO-DO:
+ mobile/tablet/desktop
+ (op) ABOUT ME TITLE
+ HOME más bonica
+ NAVBAR terminar (BOTON? como colocarlo, animarlo q funcione)
