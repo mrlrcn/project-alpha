@@ -3,9 +3,6 @@
 
  TO-DO:
 
-
-
-
  2.-FINISH home screen (ask 4help¿?)
     2.5 ask imgs position OR make a gif and upload just 1 img
 
@@ -26,3 +23,6 @@
  HOME más bonica
  NAVBAR terminar (BOTON? como colocarlo, animarlo q funcione)
  linea blanca al final de skills?
+
+ Añadir + texto al about?
+      - I want to use my passion and skills to create digital products and experiences.

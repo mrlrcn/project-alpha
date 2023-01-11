@@ -50,7 +50,7 @@ body {
 .if {
     width: 80%;
     max-width: 1000px;
-    min-width: 289px;
+    min-width: 280px;
     height: 90%;
     position: relative;
     display: flex;
@@ -73,6 +73,12 @@ body {
       flex: 1;
       text-align: center;
   }
+  .btn-menu {
+    background-color: red;
+	  width: 40px;
+	  height: 40px;
+  }
+
     .navtext {
       display: inline-block;
       position: relative;
@@ -101,12 +107,6 @@ body {
         transform: scaleX(1);
         transform-origin: bottom left;
       }
-
-  .btn-menu {
-    width: 30px;
-    height: 30px;
-    content: url(imgs/menuCerrado-img.svg);
-  }
   
 
 .header {
