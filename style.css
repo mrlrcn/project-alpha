@@ -321,6 +321,14 @@ textarea {
         resize: vertical;
       }
       
+
+[type="text"]:focus,
+[type="email"]:focus
+[type="email"]:focus {
+    border-color: #B4A1DB;
+    outline: none;
+}
+
 [type="submit"] {
     font-weight: 700;
     font-size: 20px;
