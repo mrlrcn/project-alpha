@@ -7,16 +7,35 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,800;1,800&display=swap" rel="stylesheet">
-    
-      <!--Link to JS File-->
-  <script src="index.js"></script>
 
     <title>About Me: Mar</title>
+    <link rel="icon" type="image/x-icon" href="imgs/face-img.svg">
 </head>
 
 <body>
 
     <div class="if">
+      <!-- TOPBAR -->
+      <nav class="navmain" id="main-nav">
+        <!--CARITA-->
+        <div class="navicon" id="icon"> <img src="imgs/face-img.svg" alt="a smiley face" width="40" height="100%"> </div>
+        <!--ENLACES-->
+        <div class="naveg" id="navbar">
+            <nav class="navegmenu">
+                <a class="navtext" href="#aboutme">ABOUT MAR</a>
+                
+                <a class="navtext" href="#contact">CONTACT</a>
+            </nav>
+        </div>
+        <!--BOTON-->
+          <button class="btn menubtn" id="btn-menu">
+          <span>
+            =
+          </span>
+        </button>
+        
+    </nav>
+
         <!-- HEADER -->
         <header class="header">
           <span>Hi, I'm:</span>
@@ -34,7 +53,7 @@
             <div class="portrait-container">
               <img class="portrait" src="imgs/portrait.jpeg" alt="a portrait picture of my face">
             </div>
-              <div class="button-container">
+              <div class="button-container"> <!--Esto deberian ser LINKS estilados como BOTONES-->
                 <button class="btn">ABOUT ME</button>
                 <button class="btn btn--secondary">CONTACT ME</button>
             </div>
@@ -89,7 +108,7 @@
             <input name="email" type="text" class="contact-form" placeholder="So I can contact you" />
 
             <label for="text">Message</label> 
-            <textarea name="text" class="contact-form" placeholder="Do you need help with a project? Ask for a budget? Maybe more information about me or my work? Tell me how can I help!"></textarea>
+            <textarea name="text" type="text" class="contact-form" placeholder="Do you need help with a project? Ask for a budget? Maybe more information about me or my work? Tell me how can I help!"></textarea>
 
             <input type="submit" value="SEND"/>
           </form>
@@ -107,5 +126,7 @@
               </div>
         </div>
     </div>
+    <!--Link to JS File-->
+    <script src="index.js"></script>
 </body>
 </html>
